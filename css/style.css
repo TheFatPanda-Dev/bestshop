@@ -105,16 +105,30 @@ body {
 .btn-large {
 	padding: 22px 150px;
 }
+
+.btn-small {
+	padding: 16px 57px;
+}
+
 .btn-primary {
 	background-color: var(--color-primary);
 	color: var(--color-white);
 	font: normal normal bold 16px/22px var(--font-secondary);
 }
-#cta {
+
+.btn-secondary {
+	background-color: var(--color-redish);
+	color: var(--color-white);
+	font: normal normal bold 16px/22px var(--font-secondary);
+}
+
+#cta,
+#pricing {
 	margin-top: 100px;
 	margin-bottom: 120px;
 }
-#cta .section__heading {
+#cta .section__heading,
+#pricing .section__heading {
 	text-align: center;
 }
 .section__heading {
@@ -244,4 +258,76 @@ hr {
 }
 .footer__social img {
 	margin-right: 20px;
+}
+
+.pricing {
+	border-radius: 10px;
+	padding: 35px 130px 35px 130px;
+	gap: 20px;
+}
+
+.pricing--red {
+	border: 1px solid var(--color-redish);
+}
+
+.pricing--blue {
+	border: 1px solid var(--color-primary);
+}
+
+.pricing--green {
+	border: 1px solid var(--color-green);
+}
+
+.pricing--red .btn,
+.pricing--blue .btn,
+.pricing--green .btn {
+	position: relative;
+	bottom: -60px;
+}
+
+.pricing__title {
+	font: normal normal bold 20px/10px var(--font-primary);
+	color: var(--color-dark-black);
+	margin-bottom: 15px;
+}
+
+.pricing--blue .pricing__price {
+	color: var(--color-primary);
+}
+
+.pricing--green .pricing__price {
+	color: var(--color-green);
+}
+
+.pricing__price {
+	font: normal normal 300 46px/2px var(--font-secondary);
+	color: var(--color-redish);
+	margin-bottom: 10px;
+}
+
+.pricing__offer {
+	min-height: 20px;
+	margin-bottom: 50px;
+}
+
+.pricing__features__item {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+}
+
+.btn-secondary {
+	background-color: var(--color-redish);
+	color: var(--color-white);
+	font: normal normal bold 16px/22px var(--font-secondary);
+	padding: 16px 57px;
+}
+
+.btn-green {
+	background-color: var(--color-green);
+	color: var(--color-white);
+}
+
+#pricing .col-3 {
+	gap: 59px;
 }
